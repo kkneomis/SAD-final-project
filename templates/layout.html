@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>SAD Admissions</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap2.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='animate.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='dashboard.css') }}">
+
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/2fdd999bc3.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-color="red" data-image="https://s3.amazonaws.com/StartupStockPhotos/uploads/20160503/4.jpg">
+
+    <!--   you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple" -->
+
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="/" class="simple-text">
+                    Admissions System
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li>
+                    <a href="/">
+                       <i class="fa fa-home" aria-hidden="true"></i>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/students/1">
+                       <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        <p>Students</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="/agencies">
+                        <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                        <p>Government Agencies</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/recruiters">
+                        <i class="fa fa-cogs" aria-hidden="true"></i>
+                        <p>Recruiters</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/programs/1">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                        <p>Programs</p>
+                    </a>
+                </li>
+            </ul>
+    	</div>
+    </div>
+
+
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">{{ title }}</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-dashboard"></i>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-globe"></i>
+                                    <b class="caret"></b>
+                                    <span class="notification">5</span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Notification 1</a></li>
+                                <li><a href="#">Notification 2</a></li>
+                                <li><a href="#">Notification 3</a></li>
+                                <li><a href="#">Notification 4</a></li>
+                                <li><a href="#">Another notification</a></li>
+                              </ul>
+                        </li>
+                        <li>
+                           <a href="">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                           <a href="/registration">
+                               Register!
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Dropdown
+                                    <b class="caret"></b>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="/programs/1">Program 1</a></li>
+                                <li><a href="/programs/2">Program 2</a></li>
+                                <li><a href="/programs/3">Program 3</a></li>
+                                <li><a href="/programs/4">Program 4</a></li>
+                                <li><a href="/programs/5">Program 5</a></li>
+                              </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="content">
+            <div class="container-fluid">
+            {% for message in get_flashed_messages() %}
+              <div class="alert alert-info">
+                  <button type="button" aria-hidden="true" class="close">×</button>
+                  <span>{{ message }}</span>
+                </div>
+            <div class=flash></div>
+          {% endfor %}
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">{{ text }}</h4>
+                            </div>
+                            <div class="content">
+                               {% block body %}{% endblock %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <p class="copyright pull-right">
+                    &copy; 2016 <a href="/">Dixon, Kakpovi,  Famulegun</a>, for the love of Systems Analysis
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+    <!--   Core JS Files   -->
+    <script src="{{url_for('static', filename='jquery.js')}}"></script>
+    <script src="{{url_for('static', filename='bootstrap.js')}}"></script>
+	<!--  Checkbox, Radio & Switch Plugins -->
+    <script src="{{url_for('static', filename='radio.js')}}"></script>
+	<!--  Charts Plugin -->
+    <script src="{{url_for('static', filename='chartist.js')}}"></script>
+    <!--  Notifications Plugin    -->
+    <script src="{{url_for('static', filename='notify.js')}}"></script>
+    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+    <script src="{{url_for('static', filename='dashboard.js')}}"></script>
+	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+
+</html>

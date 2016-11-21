@@ -1,0 +1,121 @@
+{% extends "layout.html" %}
+{% block body %}
+
+ <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Edit Profile</h4>
+                            </div>
+                            <div class="content">
+                                <form action="{{ url_for('register') }}"  method="post" >
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Name</label>
+                                                <input id="stu_name" name="stu_name" type="text" placeholder="What is your name?" class="form-control" required="true">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Email address</label>
+                                                <input type="email" class="form-control" placeholder="Email">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>GPA</label>
+                                                <input id="stu_gpa" name="stu_gpa" type="text" placeholder="ex: 3.0/4.0" class="form-control" required="true">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>High School</label>
+                                                <input id="high_school" name="high_school" type="text" placeholder="What High School did you attend?" class="form-control" required="true">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Essay</label>
+                                                <textarea id="essay" name="essay" rows="5" class="form-control" placeholder="Here can be your description" value="Mike">Paste your essay here...</textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <!-- Multiple Checkboxes -->
+                                            <div class="form-group">
+                                              <label class="col-md-4 control-label" for="stu_demographics">Minority Groups</label>
+                                              <div class="col-md-4">
+                                              <div class="checkbox">
+                                                <label for=" stu_demographics-0">
+                                                  <input type="checkbox" name=" stu_demographics_afr" id=" stu_demographics-0" value="afr">
+                                                  African American
+                                                </label>
+                                                </div>
+                                              <div class="checkbox">
+                                                <label for=" stu_demographics-1">
+                                                  <input type="checkbox" name=" stu_demographics_lat" id=" stu_demographics-1" value="lat">
+                                                  Hispanic/Latino
+                                                </label>
+                                                </div>
+                                              <div class="checkbox">
+                                                <label for=" stu_demographics-2">
+                                                  <input type="checkbox" name=" stu_demographics_ftic" id=" stu_demographics-2" value="ftic">
+                                                  First Time in College
+                                                </label>
+                                                </div>
+                                              <div class="checkbox">
+                                                <label for=" stu_demographics-3">
+                                                  <input type="checkbox" name=" stu_demographics" id=" stu_demographics-3" value="deaf">
+                                                  Deaf
+                                                </label>
+                                                </div>
+                                              <div class="checkbox">
+                                                <label for=" stu_demographics-4">
+                                                  <input type="checkbox" name=" stu_demographics" id=" stu_demographics-4" value="blind">
+                                                  Blind
+                                                </label>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" name="submit"  class="btn btn-info btn-fill pull-right">Register</button>
+                                    <div class="clearfix"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-user">
+                            <div class="image">
+                                <img src="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400" alt="..."/>
+                            </div>
+                            <div class="content">
+                                <h4 class="text-center">Sign up here to apply to our programs</h4>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+{% endblock %}

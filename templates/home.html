@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block body %}
+     <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Students who have applied</h4>
+                            </div>
+                            <div class="content table-responsive table-full-width">
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                    <tr>
+                                      <th>Student ID</th>
+                                      <th>Student Name</th>
+                                      <th>GPA</th>
+                                      <th>High School</th>
+                                      <th>Essay</th>
+                                    </tr>
+                                  </thead>
+                                    <tbody>
+                                        {% for student in students %}
+                                            <tr>
+                                              <td>{{ student.stu_id }}</td>
+                                              <td><a href="/students/{{ student.stu_id }}">{{ student.stu_name }}</a></td>
+                                              <td>{{ student.stu_gpa }}</td>
+                                              <td>{{ student.stu_high_school }}</td>
+                                              <td>{{ student.stu_essay }}</td>
+                                            </tr>
+                                            {% else %}
+                                            <tr>
+                                              <td>No Students</td>
+                                            </tr>
+                                            {% endfor %}
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+{% endblock %}
