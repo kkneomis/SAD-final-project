@@ -4,6 +4,13 @@
     <list default="true" id="3cbb80b6-6029-41da-a7f1-19a7bc4d4fb8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr.db" afterPath="$PROJECT_DIR$/flaskr.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Admissions.py" afterPath="$PROJECT_DIR$/Admissions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tables.sql" afterPath="$PROJECT_DIR$/tables.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/agency.html" afterPath="$PROJECT_DIR$/templates/agency.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/program.html" afterPath="$PROJECT_DIR$/templates/program.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/recruiter.html" afterPath="$PROJECT_DIR$/templates/recruiter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/registration.html" afterPath="$PROJECT_DIR$/templates/registration.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/student.html" afterPath="$PROJECT_DIR$/templates/student.html" />
     </list>
     <ignored path="Admissions.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,28 +37,51 @@
       <file leaf-file-name="Admissions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admissions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
-              <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
+            <state relative-caret-position="330">
+              <caret line="22" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
               <folding>
                 <element signature="e#19#28#0" expanded="true" />
-                <marker date="1479687351000" expanded="true" signature="1437:1458" ph="SELECT * FRO... STUDENT" />
-                <marker date="1479687351000" expanded="true" signature="1746:1767" ph="SELECT * FRO... PROGRAM" />
-                <marker date="1479687351000" expanded="true" signature="1746:1768" ph="SELECT * FRO... PROGRAM" />
-                <marker date="1479687351000" expanded="true" signature="1746:1769" ph="SELECT * FRO... PROGRAM" />
-                <marker date="1479687351000" expanded="true" signature="2274:2288" ph="SELECT * FRO... STUDENT" />
-                <marker date="1479687351000" expanded="true" signature="2274:2341" ph="SELECT * FRO... APPLICATION" />
-                <marker date="1479687351000" expanded="true" signature="2274:2374" ph="SELECT * FRO... APPLICATION" />
-                <marker date="1479687351000" expanded="true" signature="2498:2546" ph="SELECT * FRO... PROGRAM" />
-                <marker date="1479687351000" expanded="true" signature="2853:2874" ph="SELECT * FRO... STUDENT" />
-                <marker date="1479687351000" expanded="true" signature="3160:3174" ph="SELECT * FRO... STUDENT" />
-                <marker date="1479687351000" expanded="true" signature="3160:3185" ph="SELECT * FRO... APPLICATION" />
-                <marker date="1479687351000" expanded="true" signature="3244:3265" ph="SELECT * FRO... STUDENT" />
-                <marker date="1479687351000" expanded="true" signature="3766:3870" ph="INSERT INTO STUDENT... " />
-                <marker date="1479687351000" expanded="true" signature="4294:4410" ph="INSERT INTO APPLICATION... " />
-                <marker date="1479687351000" expanded="true" signature="4294:4433" ph="INSERT INTO APPLICATION... " />
-                <marker date="1479687351000" expanded="true" signature="4747:4803" ph="UPDATE APPLI... " />
-                <marker date="1479687351000" expanded="true" signature="5114:5170" ph="UPDATE APPLI... " />
+                <marker date="1480449673000" expanded="true" signature="1437:1458" ph="SELECT * FRO... STUDENT" />
+                <marker date="1480449673000" expanded="true" signature="1746:1767" ph="SELECT * FRO... PROGRAM" />
+                <marker date="1480449673000" expanded="true" signature="1746:1768" ph="SELECT * FRO... PROGRAM" />
+                <marker date="1480449673000" expanded="true" signature="1746:1769" ph="SELECT * FRO... PROGRAM" />
+                <marker date="1480449673000" expanded="true" signature="2274:2281" ph="SELECT * FRO... APPLICATION" />
+                <marker date="1480449673000" expanded="true" signature="2274:2364" ph="SELECT STUDE... " />
+                <marker date="1480449673000" expanded="true" signature="2274:2429" ph="SELECT STUDE... STUDENT" />
+                <marker date="1480449673000" expanded="true" signature="2274:2501" ph="SELECT STUDE... STUDENT" />
+                <marker date="1480449673000" expanded="true" signature="2274:2573" ph="SELECT STUDE... STUDENT" />
+                <marker date="1480449673000" expanded="true" signature="2274:2632" ph="SELECT STUDE... STUDENT" />
+                <marker date="1480449673000" expanded="true" signature="2274:2695" ph="SELECT * FRO... APPLICATION" />
+                <marker date="1480449673000" expanded="true" signature="2274:2696" ph="SELECT STUDE... STUDENT" />
+                <marker date="1480449673000" expanded="true" signature="3065:3150" ph="select STUDE... " />
+                <marker date="1480449673000" expanded="true" signature="3065:3211" ph="select STUDE... STUDENT" />
+                <marker date="1480449673000" expanded="true" signature="3065:3279" ph="select STUDE... STUDENT" />
+                <marker date="1480449673000" expanded="true" signature="3065:3347" ph="select STUDE... STUDENT" />
+                <marker date="1480449673000" expanded="true" signature="3065:3415" ph="SELECT * FRO... STUDENT" />
+                <marker date="1480449673000" expanded="true" signature="3701:3770" ph="SELECT STUDE... " />
+                <marker date="1480449673000" expanded="true" signature="3701:3843" ph="SELECT STUDE... " />
+                <marker date="1480449673000" expanded="true" signature="3701:3923" ph="SELECT STUDE... STUDENT" />
+                <marker date="1480449673000" expanded="true" signature="3701:3991" ph="SELECT STUDE... STUDENT" />
+                <marker date="1480449673000" expanded="true" signature="3701:4059" ph="SELECT STUDE... STUDENT" />
+                <marker date="1480449673000" expanded="true" signature="3701:4119" ph="SELECT STUDE... STUDENT" />
+                <marker date="1480449673000" expanded="true" signature="3701:4120" ph="SELECT * FRO... STUDENT" />
+                <marker date="1480449673000" expanded="true" signature="4783:4887" ph="INSERT INTO STUDENT... " />
+                <marker date="1480449673000" expanded="true" signature="5306:5422" ph="INSERT INTO APPLICATION... " />
+                <marker date="1480449673000" expanded="true" signature="5306:5445" ph="INSERT INTO APPLICATION... " />
+                <marker date="1480449673000" expanded="true" signature="5516:5569" ph="SELECT STU_D... STUDENT" />
+                <marker date="1480449673000" expanded="true" signature="5905:5961" ph="UPDATE APPLI... " />
+                <marker date="1480449673000" expanded="true" signature="6272:6328" ph="UPDATE APPLI... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tables.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tables.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1440">
+              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="109" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -59,18 +89,18 @@
       <file leaf-file-name="registration.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/registration.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+            <state relative-caret-position="810">
+              <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="student.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/student.html">
+      <file leaf-file-name="agency.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/agency.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="53" column="59" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
+            <state relative-caret-position="690">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,18 +109,8 @@
       <file leaf-file-name="recruiter.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/recruiter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dashboard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2355">
-              <caret line="157" column="61" selection-start-line="0" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
+            <state relative-caret-position="405">
+              <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -99,8 +119,8 @@
       <file leaf-file-name="program.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/program.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+            <state relative-caret-position="540">
+              <caret line="36" column="39" selection-start-line="21" selection-start-column="32" selection-end-line="36" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -109,42 +129,9 @@
       <file leaf-file-name="layout.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+            <state relative-caret-position="-90">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="89" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chartist.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/chartist.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/dashboard.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2400">
-              <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#47#0" expanded="false" />
-                <marker date="1478748280000" expanded="true" signature="1522:1563" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -174,8 +161,6 @@
         <option value="$PROJECT_DIR$/static/bootstrap.css" />
         <option value="$PROJECT_DIR$/static/bootstrap.js" />
         <option value="$PROJECT_DIR$/static/jquery.js" />
-        <option value="$PROJECT_DIR$/templates/agency.html" />
-        <option value="$PROJECT_DIR$/tables.sql" />
         <option value="$PROJECT_DIR$/static/bootstrap2.css" />
         <option value="$PROJECT_DIR$/static/animate.css" />
         <option value="$PROJECT_DIR$/static/dashboard.css" />
@@ -185,13 +170,16 @@
         <option value="$PROJECT_DIR$/static/dashboard.js" />
         <option value="$PROJECT_DIR$/static/chartist.js" />
         <option value="$PROJECT_DIR$/templates/dashboard.html" />
-        <option value="$PROJECT_DIR$/templates/registration.html" />
         <option value="$PROJECT_DIR$/templates/home.html" />
-        <option value="$PROJECT_DIR$/templates/student.html" />
-        <option value="$PROJECT_DIR$/templates/recruiter.html" />
-        <option value="$PROJECT_DIR$/templates/program.html" />
-        <option value="$PROJECT_DIR$/Admissions.py" />
         <option value="$PROJECT_DIR$/templates/layout.html" />
+        <option value="$PROJECT_DIR$/templates/student.html" />
+        <option value="$PROJECT_DIR$/templates/registration.html" />
+        <option value="$PROJECT_DIR$/mini_project.sql" />
+        <option value="$PROJECT_DIR$/templates/recruiter.html" />
+        <option value="$PROJECT_DIR$/Admissions.py" />
+        <option value="$PROJECT_DIR$/tables.sql" />
+        <option value="$PROJECT_DIR$/templates/agency.html" />
+        <option value="$PROJECT_DIR$/templates/program.html" />
       </list>
     </option>
   </component>
@@ -231,7 +219,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -266,6 +253,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -524,14 +512,14 @@
     <frame x="0" y="46" width="1280" height="709" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19386107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13812602" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31298906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.64788735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -552,9 +540,9 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17124394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32465753" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2003231" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -582,23 +570,20 @@
           <url>file://$PROJECT_DIR$/templates/student.html</url>
           <line>20</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Admissions.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/student.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
-          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -619,23 +604,36 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#19#28#0" expanded="true" />
-            <marker date="1479687351000" expanded="true" signature="1437:1458" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="1746:1767" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="1746:1768" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="1746:1769" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="2274:2288" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="2274:2341" ph="SELECT * FRO... APPLICATION" />
-            <marker date="1479687351000" expanded="true" signature="2274:2374" ph="SELECT * FRO... APPLICATION" />
-            <marker date="1479687351000" expanded="true" signature="2498:2546" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="2853:2874" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="3160:3174" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="3160:3185" ph="SELECT * FRO... APPLICATION" />
-            <marker date="1479687351000" expanded="true" signature="3244:3265" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="3766:3870" ph="INSERT INTO STUDENT... " />
-            <marker date="1479687351000" expanded="true" signature="4294:4410" ph="INSERT INTO APPLICATION... " />
-            <marker date="1479687351000" expanded="true" signature="4294:4433" ph="INSERT INTO APPLICATION... " />
-            <marker date="1479687351000" expanded="true" signature="4747:4803" ph="UPDATE APPLI... " />
-            <marker date="1479687351000" expanded="true" signature="5114:5170" ph="UPDATE APPLI... " />
+            <marker date="1480449673000" expanded="true" signature="1437:1458" ph="SELECT * FRO... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="1746:1767" ph="SELECT * FRO... PROGRAM" />
+            <marker date="1480449673000" expanded="true" signature="1746:1768" ph="SELECT * FRO... PROGRAM" />
+            <marker date="1480449673000" expanded="true" signature="1746:1769" ph="SELECT * FRO... PROGRAM" />
+            <marker date="1480449673000" expanded="true" signature="2274:2281" ph="SELECT * FRO... APPLICATION" />
+            <marker date="1480449673000" expanded="true" signature="2274:2364" ph="SELECT STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="2274:2429" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2501" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2573" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2632" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2695" ph="SELECT * FRO... APPLICATION" />
+            <marker date="1480449673000" expanded="true" signature="2274:2696" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3150" ph="select STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="3065:3211" ph="select STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3279" ph="select STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3347" ph="select STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3415" ph="SELECT * FRO... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:3770" ph="SELECT STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="3701:3843" ph="SELECT STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="3701:3923" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:3991" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:4059" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:4119" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:4120" ph="SELECT * FRO... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="4783:4887" ph="INSERT INTO STUDENT... " />
+            <marker date="1480449673000" expanded="true" signature="5306:5422" ph="INSERT INTO APPLICATION... " />
+            <marker date="1480449673000" expanded="true" signature="5306:5445" ph="INSERT INTO APPLICATION... " />
+            <marker date="1480449673000" expanded="true" signature="5516:5569" ph="SELECT STU_D... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="5905:5961" ph="UPDATE APPLI... " />
+            <marker date="1480449673000" expanded="true" signature="6272:6328" ph="UPDATE APPLI... " />
           </folding>
         </state>
       </provider>
@@ -646,23 +644,36 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#19#28#0" expanded="true" />
-            <marker date="1479687351000" expanded="true" signature="1437:1458" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="1746:1767" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="1746:1768" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="1746:1769" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="2274:2288" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="2274:2341" ph="SELECT * FRO... APPLICATION" />
-            <marker date="1479687351000" expanded="true" signature="2274:2374" ph="SELECT * FRO... APPLICATION" />
-            <marker date="1479687351000" expanded="true" signature="2498:2546" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="2853:2874" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="3160:3174" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="3160:3185" ph="SELECT * FRO... APPLICATION" />
-            <marker date="1479687351000" expanded="true" signature="3244:3265" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="3766:3870" ph="INSERT INTO STUDENT... " />
-            <marker date="1479687351000" expanded="true" signature="4294:4410" ph="INSERT INTO APPLICATION... " />
-            <marker date="1479687351000" expanded="true" signature="4294:4433" ph="INSERT INTO APPLICATION... " />
-            <marker date="1479687351000" expanded="true" signature="4747:4803" ph="UPDATE APPLI... " />
-            <marker date="1479687351000" expanded="true" signature="5114:5170" ph="UPDATE APPLI... " />
+            <marker date="1480449673000" expanded="true" signature="1437:1458" ph="SELECT * FRO... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="1746:1767" ph="SELECT * FRO... PROGRAM" />
+            <marker date="1480449673000" expanded="true" signature="1746:1768" ph="SELECT * FRO... PROGRAM" />
+            <marker date="1480449673000" expanded="true" signature="1746:1769" ph="SELECT * FRO... PROGRAM" />
+            <marker date="1480449673000" expanded="true" signature="2274:2281" ph="SELECT * FRO... APPLICATION" />
+            <marker date="1480449673000" expanded="true" signature="2274:2364" ph="SELECT STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="2274:2429" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2501" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2573" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2632" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2695" ph="SELECT * FRO... APPLICATION" />
+            <marker date="1480449673000" expanded="true" signature="2274:2696" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3150" ph="select STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="3065:3211" ph="select STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3279" ph="select STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3347" ph="select STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3415" ph="SELECT * FRO... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:3770" ph="SELECT STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="3701:3843" ph="SELECT STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="3701:3923" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:3991" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:4059" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:4119" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:4120" ph="SELECT * FRO... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="4783:4887" ph="INSERT INTO STUDENT... " />
+            <marker date="1480449673000" expanded="true" signature="5306:5422" ph="INSERT INTO APPLICATION... " />
+            <marker date="1480449673000" expanded="true" signature="5306:5445" ph="INSERT INTO APPLICATION... " />
+            <marker date="1480449673000" expanded="true" signature="5516:5569" ph="SELECT STU_D... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="5905:5961" ph="UPDATE APPLI... " />
+            <marker date="1480449673000" expanded="true" signature="6272:6328" ph="UPDATE APPLI... " />
           </folding>
         </state>
       </provider>
@@ -724,23 +735,36 @@
           <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
           <folding>
             <element signature="e#19#28#0" expanded="true" />
-            <marker date="1479687351000" expanded="true" signature="1437:1458" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="1746:1767" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="1746:1768" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="1746:1769" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="2274:2288" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="2274:2341" ph="SELECT * FRO... APPLICATION" />
-            <marker date="1479687351000" expanded="true" signature="2274:2374" ph="SELECT * FRO... APPLICATION" />
-            <marker date="1479687351000" expanded="true" signature="2498:2546" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="2853:2874" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="3160:3174" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="3160:3185" ph="SELECT * FRO... APPLICATION" />
-            <marker date="1479687351000" expanded="true" signature="3244:3265" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="3766:3870" ph="INSERT INTO STUDENT... " />
-            <marker date="1479687351000" expanded="true" signature="4294:4410" ph="INSERT INTO APPLICATION... " />
-            <marker date="1479687351000" expanded="true" signature="4294:4433" ph="INSERT INTO APPLICATION... " />
-            <marker date="1479687351000" expanded="true" signature="4747:4803" ph="UPDATE APPLI... " />
-            <marker date="1479687351000" expanded="true" signature="5114:5170" ph="UPDATE APPLI... " />
+            <marker date="1480449673000" expanded="true" signature="1437:1458" ph="SELECT * FRO... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="1746:1767" ph="SELECT * FRO... PROGRAM" />
+            <marker date="1480449673000" expanded="true" signature="1746:1768" ph="SELECT * FRO... PROGRAM" />
+            <marker date="1480449673000" expanded="true" signature="1746:1769" ph="SELECT * FRO... PROGRAM" />
+            <marker date="1480449673000" expanded="true" signature="2274:2281" ph="SELECT * FRO... APPLICATION" />
+            <marker date="1480449673000" expanded="true" signature="2274:2364" ph="SELECT STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="2274:2429" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2501" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2573" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2632" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2695" ph="SELECT * FRO... APPLICATION" />
+            <marker date="1480449673000" expanded="true" signature="2274:2696" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3150" ph="select STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="3065:3211" ph="select STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3279" ph="select STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3347" ph="select STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3415" ph="SELECT * FRO... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:3770" ph="SELECT STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="3701:3843" ph="SELECT STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="3701:3923" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:3991" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:4059" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:4119" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:4120" ph="SELECT * FRO... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="4783:4887" ph="INSERT INTO STUDENT... " />
+            <marker date="1480449673000" expanded="true" signature="5306:5422" ph="INSERT INTO APPLICATION... " />
+            <marker date="1480449673000" expanded="true" signature="5306:5445" ph="INSERT INTO APPLICATION... " />
+            <marker date="1480449673000" expanded="true" signature="5516:5569" ph="SELECT STU_D... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="5905:5961" ph="UPDATE APPLI... " />
+            <marker date="1480449673000" expanded="true" signature="6272:6328" ph="UPDATE APPLI... " />
           </folding>
         </state>
       </provider>
@@ -802,23 +826,36 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#19#28#0" expanded="true" />
-            <marker date="1479687351000" expanded="true" signature="1437:1458" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="1746:1767" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="1746:1768" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="1746:1769" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="2274:2288" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="2274:2341" ph="SELECT * FRO... APPLICATION" />
-            <marker date="1479687351000" expanded="true" signature="2274:2374" ph="SELECT * FRO... APPLICATION" />
-            <marker date="1479687351000" expanded="true" signature="2498:2546" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="2853:2874" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="3160:3174" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="3160:3185" ph="SELECT * FRO... APPLICATION" />
-            <marker date="1479687351000" expanded="true" signature="3244:3265" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="3766:3870" ph="INSERT INTO STUDENT... " />
-            <marker date="1479687351000" expanded="true" signature="4294:4410" ph="INSERT INTO APPLICATION... " />
-            <marker date="1479687351000" expanded="true" signature="4294:4433" ph="INSERT INTO APPLICATION... " />
-            <marker date="1479687351000" expanded="true" signature="4747:4803" ph="UPDATE APPLI... " />
-            <marker date="1479687351000" expanded="true" signature="5114:5170" ph="UPDATE APPLI... " />
+            <marker date="1480449673000" expanded="true" signature="1437:1458" ph="SELECT * FRO... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="1746:1767" ph="SELECT * FRO... PROGRAM" />
+            <marker date="1480449673000" expanded="true" signature="1746:1768" ph="SELECT * FRO... PROGRAM" />
+            <marker date="1480449673000" expanded="true" signature="1746:1769" ph="SELECT * FRO... PROGRAM" />
+            <marker date="1480449673000" expanded="true" signature="2274:2281" ph="SELECT * FRO... APPLICATION" />
+            <marker date="1480449673000" expanded="true" signature="2274:2364" ph="SELECT STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="2274:2429" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2501" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2573" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2632" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2695" ph="SELECT * FRO... APPLICATION" />
+            <marker date="1480449673000" expanded="true" signature="2274:2696" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3150" ph="select STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="3065:3211" ph="select STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3279" ph="select STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3347" ph="select STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3415" ph="SELECT * FRO... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:3770" ph="SELECT STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="3701:3843" ph="SELECT STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="3701:3923" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:3991" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:4059" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:4119" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:4120" ph="SELECT * FRO... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="4783:4887" ph="INSERT INTO STUDENT... " />
+            <marker date="1480449673000" expanded="true" signature="5306:5422" ph="INSERT INTO APPLICATION... " />
+            <marker date="1480449673000" expanded="true" signature="5306:5445" ph="INSERT INTO APPLICATION... " />
+            <marker date="1480449673000" expanded="true" signature="5516:5569" ph="SELECT STU_D... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="5905:5961" ph="UPDATE APPLI... " />
+            <marker date="1480449673000" expanded="true" signature="6272:6328" ph="UPDATE APPLI... " />
           </folding>
         </state>
       </provider>
@@ -882,27 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/agency.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tables.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -963,10 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2400">
           <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#47#0" expanded="false" />
-            <marker date="1478748280000" expanded="true" signature="1522:1563" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -974,7 +986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -982,7 +993,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2355">
           <caret line="157" column="61" selection-start-line="0" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -990,73 +1000,115 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="89" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/student.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="59" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
+        <state relative-caret-position="375">
+          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mini_project.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/recruiter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tables.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="109" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/program.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="39" selection-start-line="21" selection-start-column="32" selection-end-line="36" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/registration.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/recruiter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+        <state relative-caret-position="810">
+          <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Admissions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
+        <state relative-caret-position="330">
+          <caret line="22" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
           <folding>
             <element signature="e#19#28#0" expanded="true" />
-            <marker date="1479687351000" expanded="true" signature="1437:1458" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="1746:1767" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="1746:1768" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="1746:1769" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="2274:2288" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="2274:2341" ph="SELECT * FRO... APPLICATION" />
-            <marker date="1479687351000" expanded="true" signature="2274:2374" ph="SELECT * FRO... APPLICATION" />
-            <marker date="1479687351000" expanded="true" signature="2498:2546" ph="SELECT * FRO... PROGRAM" />
-            <marker date="1479687351000" expanded="true" signature="2853:2874" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="3160:3174" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="3160:3185" ph="SELECT * FRO... APPLICATION" />
-            <marker date="1479687351000" expanded="true" signature="3244:3265" ph="SELECT * FRO... STUDENT" />
-            <marker date="1479687351000" expanded="true" signature="3766:3870" ph="INSERT INTO STUDENT... " />
-            <marker date="1479687351000" expanded="true" signature="4294:4410" ph="INSERT INTO APPLICATION... " />
-            <marker date="1479687351000" expanded="true" signature="4294:4433" ph="INSERT INTO APPLICATION... " />
-            <marker date="1479687351000" expanded="true" signature="4747:4803" ph="UPDATE APPLI... " />
-            <marker date="1479687351000" expanded="true" signature="5114:5170" ph="UPDATE APPLI... " />
+            <marker date="1480449673000" expanded="true" signature="1437:1458" ph="SELECT * FRO... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="1746:1767" ph="SELECT * FRO... PROGRAM" />
+            <marker date="1480449673000" expanded="true" signature="1746:1768" ph="SELECT * FRO... PROGRAM" />
+            <marker date="1480449673000" expanded="true" signature="1746:1769" ph="SELECT * FRO... PROGRAM" />
+            <marker date="1480449673000" expanded="true" signature="2274:2281" ph="SELECT * FRO... APPLICATION" />
+            <marker date="1480449673000" expanded="true" signature="2274:2364" ph="SELECT STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="2274:2429" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2501" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2573" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2632" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="2274:2695" ph="SELECT * FRO... APPLICATION" />
+            <marker date="1480449673000" expanded="true" signature="2274:2696" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3150" ph="select STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="3065:3211" ph="select STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3279" ph="select STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3347" ph="select STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3065:3415" ph="SELECT * FRO... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:3770" ph="SELECT STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="3701:3843" ph="SELECT STUDE... " />
+            <marker date="1480449673000" expanded="true" signature="3701:3923" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:3991" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:4059" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:4119" ph="SELECT STUDE... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="3701:4120" ph="SELECT * FRO... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="4783:4887" ph="INSERT INTO STUDENT... " />
+            <marker date="1480449673000" expanded="true" signature="5306:5422" ph="INSERT INTO APPLICATION... " />
+            <marker date="1480449673000" expanded="true" signature="5306:5445" ph="INSERT INTO APPLICATION... " />
+            <marker date="1480449673000" expanded="true" signature="5516:5569" ph="SELECT STU_D... STUDENT" />
+            <marker date="1480449673000" expanded="true" signature="5905:5961" ph="UPDATE APPLI... " />
+            <marker date="1480449673000" expanded="true" signature="6272:6328" ph="UPDATE APPLI... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/program.html">
+    <entry file="file://$PROJECT_DIR$/templates/agency.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        <state relative-caret-position="690">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+        <state relative-caret-position="-90">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
           <folding />
         </state>
       </provider>

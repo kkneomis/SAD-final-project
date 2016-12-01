@@ -14,7 +14,7 @@
                                      <thead>
                                         <tr>
                                           <th>Student</th>
-                                          <th>App ID</th>
+                                          <th>Program</th>
                                           <th>Fee paid?</th>
                                           <th>Date Applied</th>
                                           <th>Decision</th>
@@ -22,41 +22,41 @@
                                         </tr>
                                       </thead>
                                     <tbody>
-    {% for application in applications %}
-    <tr>
-      <td>{{ application.stu_id }}</td>
-      <td>{{ application.app_id }}</td>
-      <td>{{ application.app_fee_paid }}</td>
-      <td>{{ application.app_date }}</td>
-      <td>
-          {% if application.app_decision == 0 %}
-              <p>Pending...</p>
-          {% elif application.app_decision == 1 %}
-            <p>Denied</p>
-          {% else %}
-            <p>Admitted</p>
-          {% endif %}
+                                    {% for application in applications %}
+                                    <tr>
+                                      <td>{{ application.stu_name }}</td>
+                                      <td>{{ application.prog_name }}</td>
+                                      <td>{{ application.app_fee_paid }}</td>
+                                      <td>{{ application.app_date }}</td>
+                                      <td>
+                                          {% if application.app_decision == 0 %}
+                                              <p>Pending...</p>
+                                          {% elif application.app_decision == 1 %}
+                                            <p>Denied</p>
+                                          {% else %}
+                                            <p>Admitted</p>
+                                          {% endif %}
 
-      </td>
-      <td>
-          <form action="/admit" method="post">
-              <input name="app"  value="{{ application.app_id  }}" type="hidden">
-            <button type="submit" class="btn btn-primary btn-group-sm" />Admit</button>
-          </form>
-      </td>
-      <td>
-          <form action="/deny" method="post">
-              <input name="app"  value="{{ application.app_id  }}" type="hidden">
-            <button type="submit" class="btn btn-danger btn-group-sm" />Deny</button>
-          </form>
-      </td>
-    </tr>
-    {% else %}
-    <tr>
-      <td>No Applications</td>
-    </tr>
-    {% endfor %}
-  </tbody>
+                                      </td>
+                                      <td>
+                                          <form action="/admit" method="post">
+                                              <input name="app"  value="{{ application.app_id  }}" type="hidden">
+                                            <button type="submit" class="btn btn-primary btn-group-sm" />Admit</button>
+                                          </form>
+                                      </td>
+                                      <td>
+                                          <form action="/deny" method="post">
+                                              <input name="app"  value="{{ application.app_id  }}" type="hidden">
+                                            <button type="submit" class="btn btn-danger btn-group-sm" />Deny</button>
+                                          </form>
+                                      </td>
+                                    </tr>
+                                    {% else %}
+                                    <tr>
+                                      <td>No Applications</td>
+                                    </tr>
+                                    {% endfor %}
+                                  </tbody>
                                 </table>
 
                             </div>

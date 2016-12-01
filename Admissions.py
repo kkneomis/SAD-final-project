@@ -94,22 +94,29 @@ def programs(prog_id):
         prog_id = 1
     db = get_db()
     try:
-        cur = db.execute('SELECT * FROM APPLICATION, STUDENT  WHERE APPLICATION.prog_id == ? AND APPLICATION.app_decision == 2', [prog_id])
+        cur = db.execute('SELECT STUDENT.stu_name, PROGRAM.prog_name, APPLICATION.app_date, APPLICATION.app_decision \
+                            FROM STUDENT, PROGRAM, APPLICATION \
+                            WHERE STUDENT.stu_id = APPLICATION.stu_id \
+                            AND APPLICATION.prog_id = PROGRAM.prog_id \
+                            AND APPLICATION.prog_id == ? \
+                            AND APPLICATION.app_decision == 2', [prog_id])
         applications = cur.fetchall()
     except:
+        applications=''
         flash("Something went wrong")
-    cur = db.execute('SELECT * FROM PROGRAM WHERE PROGRAM.prog_id == ?', [prog_id])
-    programs = cur.fetchall()
-
 
     text = 'This page is for program owners'
     title = "Programs"
-    return render_template('program.html', text=text,title=title, programs=programs, applications=applications)
+    return render_template('program.html', text=text,title=title, applications=applications)
 
 @app.route('/agencies')
 def agencies():
     db = get_db()
-    cur = db.execute('SELECT * FROM STUDENT')
+    cur = db.execute('select STUDENT.stu_name, STUDENT.stu_gpa, STUDENT.stu_demographics, PROGRAM.prog_name \
+                        from STUDENT, APPLICATION, PROGRAM \
+                        WHERE STUDENT.stu_id = APPLICATION.app_id \
+                        AND APPLICATION.prog_id = PROGRAM.prog_id \
+                        AND student.stu_demographics like "%afr%"')
     students = cur.fetchall()
     text = 'This page is for government agencies'
     title = "Government Agencies"
@@ -118,13 +125,16 @@ def agencies():
 @app.route('/recruiters')
 def recruiters():
     db = get_db()
-    cur = db.execute('SELECT * FROM APPLICATION')
+    cur = db.execute('SELECT STUDENT.stu_name, PROGRAM.prog_name, APPLICATION.app_fee_paid, \
+                        APPLICATION.app_date, APPLICATION.app_decision, APPLICATION.app_id\
+                        FROM STUDENT, APPLICATION, PROGRAM \
+                        WHERE STUDENT.stu_id = APPLICATION.stu_id \
+                        AND PROGRAM.prog_id = APPLICATION.prog_id \
+                        ORDER BY APPLICATION.app_decision;')
     applications = cur.fetchall()
-    cur = db.execute('SELECT * FROM STUDENT')
-    students = cur.fetchall()
     text = 'This page is for the decision makers'
     title="Recruiters"
-    return render_template('recruiter.html', text=text,title=title, applications=applications, students=students)
+    return render_template('recruiter.html', text=text,title=title, applications=applications)
 
 @app.route('/register', methods=['POST'])
 def register():
@@ -134,9 +144,11 @@ def register():
         high_school = request.form['high_school']
         stu_gpa = request.form['stu_gpa']
         essay = request.form['essay']
-
+        demographics = request.form.getlist('demographics')
+        demographics = [x.encode("utf-8") for x in demographics]
+        demographics = str(demographics).strip('[]')
         db.execute('INSERT INTO STUDENT(stu_name, stu_high_school, stu_gpa, stu_demographics, stu_essay) VALUES (?, ?,?,?,?)',
-                   [stu_name, high_school, stu_gpa, "Demographics met",essay])
+                   [stu_name, high_school, stu_gpa, demographics, essay])
         db.commit()
         flash('Student Account Created')
     except:
@@ -152,9 +164,12 @@ def apply():
         program =request.form['program']
         student =request.form['student']
         db.execute('INSERT INTO APPLICATION( app_fee_paid, app_date, app_decision, stu_id, prog_id) '
-                   'VALUES ("yes", "06-06-2012", 0, ?, ?)', [program, student])
-
+                   'VALUES ("yes", "06-06-2012", 0, ?, ?)', [student, program ])
         db.commit()
+
+        cur = db.execute('SELECT STU_DEMOGRAPHICS FROM STUDENT WHERE STU_ID = ?', student)
+        dems = cur.fetchone()[0]
+        report(dems)
         flash("Applied successfully")
     except:
         flash("That didnt work fam")
@@ -184,6 +199,12 @@ def deny():
     except:
         flash("Something went wrong with denying")
     return redirect(url_for('recruiters'))
+
+
+def report(demographics):
+    list = demographics.split(",")
+    print
+    print "reporting to the appropriate agencies"
 
 if __name__ == '__main__':
     app.run()
